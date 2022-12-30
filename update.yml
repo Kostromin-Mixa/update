@@ -1,0 +1,9 @@
+- hosts: all
+  gather_facts: no
+  become: yes
+
+  tasks:
+  - name: Run update && upgrade
+      shell:
+        cmd: "sudo apt update && sudo apt upgrade"
+ 
